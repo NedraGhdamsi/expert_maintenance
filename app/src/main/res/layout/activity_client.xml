@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Client"
+    android:orientation="vertical"
+    android:background="#E1DDDC">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom :"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="NOM CLIENT" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recherche"
+        android:id="@+id/rech"
+        android:backgroundTint="#009688"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresse :"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/adr"
+
+        android:hint="Adresse" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Télephone :"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:hint="NUM TEL +216"
+        android:id="@+id/tel"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fax :"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:hint="NUM Fax"
+        android:id="@+id/fax"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mail :"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:hint="Mail"
+        android:id="@+id/mail"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contact :"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:hint="Contact "
+        android:id="@+id/con"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tel contact :"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:hint=" Tel Contact "
+        android:id="@+id/telcon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="ajouter" />
+
+        <Button
+            android:id="@+id/btnmodif"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:layout_marginLeft="10dp"
+            android:text="modifier" />
+
+        <Button
+            android:id="@+id/btnsupp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:layout_marginLeft="10dp"
+            android:text="supprimer" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#009688"
+                android:text="Enregistrer" />
+
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#009688"
+                android:text="Annuler"
+                android:layout_marginLeft="50dp"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="40dp">
+
+        <ImageButton
+            android:id="@+id/first"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/ic_baseline_fast_rewind_24" />
+
+        <ImageButton
+            android:id="@+id/previous"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/next"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_baseline_fast_forward_24" />
+
+        <ImageButton
+            android:id="@+id/last"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@android:drawable/ic_media_next" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contract"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:background="#E1DDDC"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        >
+    <EditText
+        android:id="@+id/ref"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:hint="tapez reférence de contrat"
+        />
+
+    <Button
+        android:id="@+id/rech"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:layout_toRightOf="@id/ref"
+        android:backgroundTint="#2196F3"
+        android:text="Recherche" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date début :"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:id="@+id/dated"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="date debut"
+        android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Fin :"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:id="@+id/datefin"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="date Fin"
+        android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redevence :"
+            android:textSize="20dp"
+            />
+    <EditText
+        android:id="@+id/red"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="rederence" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom client :"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/client"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Nom client" />
+        <Button
+            android:id="@+id/rechc"
+            android:layout_width="125dp"
+            android:layout_height="49dp"
+            android:layout_toRightOf="@id/client"
+            android:backgroundTint="#2196F3"
+            android:text="Recherche" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+    <Button
+        android:id="@+id/modif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Moudifier"
+        android:layout_marginLeft="15dp"/>
+
+    <Button
+        android:id="@+id/supp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Supprimer" />
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ajout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Ajouter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="40dp">
+
+        <ImageButton
+            android:id="@+id/first"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/ic_baseline_fast_rewind_24" />
+
+        <ImageButton
+            android:id="@+id/previous"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/next"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_baseline_fast_forward_24" />
+
+        <ImageButton
+            android:id="@+id/last"
+            style="@android:style/Widget.Holo.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@android:drawable/ic_media_next" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+    >
+    <Button
+        android:layout_marginLeft="20dp"
+        android:id="@+id/enr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="enregistrer" />
+    <Button
+        android:layout_marginLeft="70dp"
+        android:id="@+id/annul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="annuler" />
+
+</LinearLayout>
+    <EditText
+        android:id="@+id/idc"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
